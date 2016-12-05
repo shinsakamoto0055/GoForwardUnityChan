@@ -34,8 +34,7 @@ public class CubeController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Cube")
-        {        audioSource.Play ();
-
+        {
             //            Debug.Log("collision");
             //ブロックの衝突音を鳴らす
             audioSource.Play();
